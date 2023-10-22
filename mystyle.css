@@ -5,16 +5,15 @@
     font-weight: 200 900;
     font-stretch: 75% 125%;
 }
-.site {
-    padding: 5%;
-    max-width: 720px;
-}
 html {
     display: table;
     margin: auto;
     font-family: "Mona Sans";
 }
 body {
+    background-color: #0d1118;
+    padding: 5%;
+    max-width: 720px;
     display: table-cell;
     vertical-align: middle;
     animation: fadeInAnimation ease 2s;
@@ -61,6 +60,10 @@ p {
     color: #eff2f5;
     text-align: justify;
 }
+a,
+u {
+    text-decoration: none;
+}
 .border {
     border-bottom-style: solid;
     border-bottom-color: #30363d;
@@ -81,4 +84,20 @@ p {
 }
 .fa:hover {
     opacity: 25%;
+}
+.menu {
+    margin-right: 40px;
+    margin-left: 1px;
+    font-family: "Mona Sans";
+}
+.menu:hover {
+    opacity: 25%;
+}
+.dark-mode-button {  
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.dark-mode {
+    background-color: white;
 }

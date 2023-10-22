@@ -19,8 +19,14 @@
         />
         <link rel="stylesheet" href="mystyle.css" />
         <title>Szymon Kaklin</title>
+        <script>
+            function toggleDarkMode() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
     </head>
-    <body class="site" style="background-color: #0d1118">
+    <body>
         <div class="border">
             <img src="images/pp.png" alt="an image of a cat" />
             <div class="header">
@@ -38,23 +44,27 @@
                         style="color: #eff2f5"
                     ></i>
                 </a>
-                <i class="fa fa-moon-o fa-2x" style="color: #eff2f5"></i>
+                <button
+                    type="button"
+                    class="dark-mode-button"
+                    onclick="toggleDarkMode()"
+                >
+                    <i class="fa fa-moon-o fa-2x" style="color: #eff2f5"></i>
+                </button>
             </div>
         </div>
         <div class="border">
             <a href="www.google.com" style="text-decoration: none">
-                <p class="fa">About</p>
+                <p class="menu">About</p>
             </a>
             <a>
-                <p class="fa">Projects</p>
+                <p class="menu">Projects</p>
             </a>
             <a>
-                <p class="fa">Blog</p>
+                <p class="menu">Blog</p>
             </a>
         </div>
-        <h2>
-            About
-        </h2>
+        <h2>About</h2>
         <p>
             MEng Engineering (Electronic with Computer Science) UCL Graduate
             capable of applying robust analytical and problem solving skills.
@@ -68,8 +78,6 @@
             Possesses a strong passion for technology, and often seeks ways in
             which to influence personal interests with technical solutions.
         </p>
-        <h2>
-            Work Experience
-        </h2>
+        <h2>Work Experience</h2>
     </body>
 </html>
