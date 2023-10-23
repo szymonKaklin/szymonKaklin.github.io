@@ -64,6 +64,9 @@ a,
 u {
     text-decoration: none;
 }
+i {
+    color: #eff2f5;
+}
 .border {
     border-bottom-style: solid;
     border-bottom-color: #30363d;
@@ -98,6 +101,27 @@ u {
     background: none;
     cursor: pointer;
 }
+
+/* DARK MODE */
+
 .dark-mode {
     background-color: white;
+}
+.dark-mode p {
+    color: black;
+}
+.dark-mode h1 {
+    color: black;
+}
+.dark-mode h2 {
+    color: black;
+}
+.dark-mode h3 {
+    color: black;
+}
+.dark-mode h4 {
+    color: black;
+}
+.dark-mode i {
+    color: black;
 }
