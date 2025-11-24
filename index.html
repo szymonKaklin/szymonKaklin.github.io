@@ -24,6 +24,13 @@
             function toggleDarkMode() {
                 var element = document.body;
                 element.classList.toggle("dark-mode");
+
+                var icon = document.getElementById("mode-icon");
+                if (element.classList.contains("dark-mode")) {
+                    icon.className = "fa fa-sun-o fa-2x";
+                } else {
+                    icon.className = "fa fa-moon-o fa-2x";
+                }
             }
         </script>
     </head>
@@ -47,35 +54,99 @@
                     class="dark-mode-button"
                     onclick="toggleDarkMode()"
                 >
-                    <i class="fa fa-moon-o fa-2x"></i>
+                    <i id="mode-icon" class="fa fa-moon-o fa-2x"></i>
                 </button>
             </div>
         </div>
         <div class="border">
-            <a href="www.google.com" style="text-decoration: none">
+            <a href="index.html" style="text-decoration: none">
                 <p class="menu">About</p>
             </a>
-            <a href="www.google.com">
+            <a href="https://github.com/szymonKaklin?tab=repositories">
                 <p class="menu">Projects</p>
             </a>
-            <a href="www.google.com">
-                <p class="menu">Blog</p>
-            </a>
         </div>
-        <h2>About</h2>
-        <p>
-            MEng Engineering (Electronic with Computer Science) UCL Graduate
-            capable of applying robust analytical and problem solving skills.
-        </p>
-        <p>
-            Currently working in the industrial IoT space as Engineer/Product
-            Owner for an edge computing device, enabling cloud connectivity for
-            field assets.
-        </p>
-        <p>
-            Possesses a strong passion for technology, and often seeks ways in
-            which to influence personal interests with technical solutions.
-        </p>
-        <h2>Work Experience</h2>
+        <div class="section" style="animation-delay: 0.2s;">
+            <h2>About</h2>
+            <p>
+                UCL MEng Engineering (Electronic with Computer Science) graduate, capable of applying robust analytical and problem-solving skills - currently working as an IoT Connectivity Engineer at Xylem Inc.
+            </p>
+            <p>
+                Passionate about technology and influencing personal interests with technical solutions, interested in pursuing a career in software. Highly adaptable and open to learning new things as a result of having studied and lived in five different countries.
+            </p>
+        </div>
+
+        <div class="section" style="animation-delay: 0.4s;">
+            <h2>Skills</h2>
+            <p>
+                <strong>Most experienced:</strong> Python<br>
+                <strong>Worked with:</strong> Linux, Git, Ansible, Docker, Bitbucket Pipelines, Jira/Confluence | Agile<br>
+                <strong>Other experience:</strong> Bash scripting, Go, JavaScript (React Native)
+            </p>
+        </div>
+
+        <div class="section" style="animation-delay: 0.6s;">
+            <h2>Education</h2>
+            <h3>
+                <span>University College London (UCL)</span>
+                <span style="opacity: 0.7;">2017 – 2021</span>
+            </h3>
+            <p>
+                <strong>MEng, Engineering (Electronic with Computer Science) | First Class Honours</strong><br>
+                Machine Learning & Neural Computing | Robotic Systems | Numerical Methods | Advanced Digital Design | Digital Signal Processing & Systems | Analog Electronics
+            </p>
+
+            <h3>
+                <span>Greengates International School Mexico</span>
+                <span style="opacity: 0.7;">2015 – 2017</span>
+            </h3>
+            <p>
+                <strong>International Baccalaureate (IB) Diploma | 40/45 points</strong><br>
+                HL Physics – 7/7 | HL Math – 6/7 | HL Music – 6/7
+            </p>
+        </div>
+
+        <div class="section" style="animation-delay: 0.8s;">
+            <h2>Work Experience</h2>
+
+            <h3>
+                <span>Xylem | IoT Connectivity Engineer</span>
+                <span style="opacity: 0.7;">Mar 2023 – Present</span>
+            </h3>
+            <p><em>Associate</em></p>
+            <ul>
+                <li>Serving as first line of support for end users of Xylem's Linux based IoT edge gateway, assisting with gateway deployment across a wide range of business units in the industrial and water utility sectors.</li>
+                <li>Helping maintain over 2000 deployed Linux gateway devices, routinely troubleshooting networking, application and Linux system configuration issues remotely.</li>
+                <li>Writing bash scripts and Ansible playbooks to provide over-the-air update capabilities for applications, configuration and security vulnerability mitigation.</li>
+                <li>Developed and deployed a Flask-based API (served via NGINX and Gunicorn) to automate UUID generation, CSR handling, and x509 certificate issuance via PKI during device manufacturing, used in provisioning over 600 devices.</li>
+            </ul>
+
+            <h3>
+                <span>Xylem | IoT Connectivity Engineer</span>
+                <span style="opacity: 0.7;">Sep 2021 – Mar 2023</span>
+            </h3>
+            <p><em>Graduate</em></p>
+            <ul>
+                <li>Working with Xylem's IoT gateway platform to enable cloud connectivity for devices communicating over common industrial and IoT communication protocols (RS-232/485, Siemens S7, EtherNet/IP, Modbus and MQTT).</li>
+                <li>Building Python scripts and API integrations to simplify and automate provisioning and deployments processes.</li>
+            </ul>
+
+            <h3>
+                <span>Xylem | Summer Intern</span>
+                <span style="opacity: 0.7;">Jun 2020 – Aug 2020</span>
+            </h3>
+            <ul>
+                <li>Configured and installed Xylem's IoT gateway, enabling connectivity and real-time insights into operational assets.</li>
+            </ul>
+
+            <h3>
+                <span>Fleming Society (UCL Electronics)</span>
+                <span style="opacity: 0.7;">Oct 2019 – Oct 2021</span>
+            </h3>
+            <p><em>Workshop Manager</em></p>
+            <ul>
+                <li>Running weekly electronics workshops (Arduino tech projects, PCB design in DipTrace) and organising student socials.</li>
+            </ul>
+        </div>
     </body>
 </html>
